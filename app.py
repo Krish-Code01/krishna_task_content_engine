@@ -94,9 +94,9 @@ def create_conversational_chain(text_chunks):
 # Main function to run the Streamlit app
 def main():
     initialize_session_state()
-    st.title("Almeno Chatbot")
-    st.sidebar.title("Document Processing")
-    uploaded_files = st.sidebar.file_uploader("Upload files", accept_multiple_files=True)
+    st.title("Alemeno Chatbot")
+    st.sidebar.title("Documents")
+    uploaded_files = st.sidebar.file_uploader("Upload pdfs", accept_multiple_files=True)
 
     if uploaded_files:
         with st.spinner("Processing the files..."):
